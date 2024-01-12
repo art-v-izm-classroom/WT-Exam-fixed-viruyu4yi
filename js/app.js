@@ -24,10 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sendAjaxRequest("data/log.json", "GET", function (response) {
             contentDiv.innerHTML = `<h3>${response.name}</h3>
                         <p>${response.description}</p>
-                        <img src="images/${response.image_name}" alt="${operation.toUpperCase()} Image">`;
-
-// Оновіть шлях до зображення в resultDisplay, якщо потрібно
-resultDisplay.innerHTML = `<img src="images/${response.image_name}" alt="${operation.toUpperCase()} Image">`;
+                        <img src="images/log_x.png" alt="${operation.toUpperCase()} Image">`;
 
 
 
