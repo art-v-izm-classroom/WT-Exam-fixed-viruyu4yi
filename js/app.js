@@ -23,10 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("log-button").addEventListener("click", function () {
         sendAjaxRequest("data/log.json", "GET", function (response) {
             contentDiv.innerHTML = `<h3>${response.name}</h3>
-                        <p>${response.description}</p>
-                        <img src="${response.image_name}" alt="${operation.toUpperCase()} Image">`;
-
-
+                                    <p>${response.description}</p>
+                                    <img src="${response.image_name}" alt="Logarithm Image">`;
 
             var operand1 = parseFloat(op1Input.value);
             if (isNaN(operand1) || operand1 <= 0) {
