@@ -26,9 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>${response.description}</p>
                         <img src="${response.image_name}" alt="${operation.toUpperCase()} Image">`;
 
-// Додайте вивід фото у вашому результаті
-resultDisplay.innerHTML = `<img src="${response.image_name}" alt="${operation.toUpperCase()} Image">`;
-
 
             var operand1 = parseFloat(op1Input.value);
             if (isNaN(operand1) || operand1 <= 0) {
